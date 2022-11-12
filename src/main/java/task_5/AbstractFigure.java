@@ -2,14 +2,14 @@ package task_5;
 
 public abstract class AbstractFigure {
 
-    String color;
+    private String color;
 
     public AbstractFigure (String color){
         this.color = color;
     }
 
-    abstract double calculateArea ();
-    abstract void calculatePerimetr ();
+    public abstract double calculateArea ();
+    public abstract void calculatePerimeter ();
 
 }
 

@@ -2,24 +2,24 @@ package task_3;
 
 import java.util.Scanner;
 
-public class WorkWithStrings {
+public class WorkWithStringsStartsRusBigA {
 
     public static void main (String [] args) {
 
         String wordStartsA;
 
 
-        System.out.print("Введите слово, начинающееся на русское A: ");
+        System.out.print("Введите слово, начинающееся на русское заглавное A: ");
             do {
                 Scanner scanner = new Scanner(System.in);
                 wordStartsA = scanner.nextLine();
                 if (wordStartsA.startsWith("А")) {
-                    System.out.println("Спасибо");
+                    System.out.println("Спасибо. До свидания!");
                 } else {
-                    System.out.println("Слово не начинается на A, введите заново: ");
+                    System.out.println("Слово не удовлетворяет требованиям, введите заново: ");
                 }
             }
-                while (!wordStartsA.startsWith("А"));
+            while (!wordStartsA.startsWith("А"));
 
     }
 }
